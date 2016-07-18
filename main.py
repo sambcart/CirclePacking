@@ -10,7 +10,7 @@ from pygame import gfxdraw
 from pygame.locals import *
 
 # Local libraries
-from node import Node, BoundaryNode
+from node import Node
 from cdgrid import CDGrid
 
 
