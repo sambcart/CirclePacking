@@ -1,16 +1,10 @@
-#### Libraries
-# Standard library
+import sys
 import time
-
-# Third-party library
 import pygame
 
-# Local library
 from tree import Tree
 
 def handle_cli_input(default_kwargs):
-	import sys
-
 	kwargs = default_kwargs.copy()
 
 	try:
