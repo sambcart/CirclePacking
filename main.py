@@ -8,7 +8,8 @@ def handle_cli_input(default_kwargs):
 	kwargs = default_kwargs.copy()
 
 	try:
-		for key, val in map(lambda f_arg: f_arg.split("="), sys.argv[1:]):
+		f_args = map(lambda f_arg: f_arg.split("="), sys.argv[1:])
+		for key, val in f_args:
 			assert(key in default_kwargs.keys())
 			kwargs[key] = eval(val)
 
