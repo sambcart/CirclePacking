@@ -17,5 +17,6 @@ class Node(object):
 	@staticmethod
 	def center_wrt_surf(pos, surf):
 		x, y = pos
-		return map(int, ( x + surf.get_width() / 2.,
-						 -y + surf.get_height() / 2.))
+		cx =  x + surf.get_width() / 2.
+		cy = -y + surf.get_height() / 2.
+		return map(int, (cx, cy))
